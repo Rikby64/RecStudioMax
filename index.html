@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Public/Ico/Favicon/Favicon_white.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/normalize.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>RecStudioMAX</title>
+</head>
+<body>
+    <div id="customAlert" class="custom-alert" style="display: none;">
+        <div class="custom-alert-content">
+            <span id="customAlertMessage"></span>
+            <button id="customAlertClose">ОК</button>
+        </div>
+    </div>
+
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="./Public/Ico/Logo.svg" alt="logo" width="252" height="25" loading="lazy">
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#achivements">Преимущества</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tarrif">Прайс-лист</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contactForm">Форма</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#comments">Комментарии</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutUs">О нас</a>
+            </li>
+            </ul>
+            <div class="d-flex align-items-center">
+            <a href="#contactForm" class="btn">Связаться с нами</a>
+            <a target="_blank" href="https://t.me/RecStudMAX">
+                <img src="./Public/Ico/Телеграм.svg" alt="Telegram" width="36" height="36" loading="lazy">
+            </a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    </header>
+
+    <main class="content">
+        <div class="banner_and_achivements">
+            <section id="banner">
+
+                <div class="banner">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Public/Image/Banner1@2x.jpg" class="d-block w-100" alt="Slide 1">
+                                <div class="carousel-caption one d-none d-md-block">
+                                    <p>От идеи до записи —<br> 
+                                        мы поможем воплотить <br>
+                                        ваши музыкальные мечты <br>
+                                        в жизнь!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="banner__img2" src="./Public/Image/Banner2@2x.jpg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption two d-none d-md-block">
+                                    <p>Запиши</p>
+                                    <p>свой звук — </p>
+                                    <p>создай свою историю</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Public/Image/Banner3@2x.jpg" class="d-block w-100" alt="Slide 3">
+                                <div class="carousel-caption three d-none d-md-block">
+                                    <p>Профессиональное оборудование,<br>
+                                        индивидуальный подход.<br>
+                                        идеальный звук <br>
+                                        ждет вас</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+
+            </section>
+            <section id="achivements">
+                <div class="achivements__item">
+                    <p class="achivements__item-heading">
+                        Профессиональное оборудование
+                    </p>
+                    <p class="achivements__item-text">
+                        Современные устройства обеспечивают отличную запись и сведение
+                    </p>
+                </div>
+                <div class="achivements__item">
+                    <p class="achivements__item-heading">
+                        Индивидуальный подход
+                    </p>
+                    <p class="achivements__item-text">
+                        Наша команда опытных звукорежиссеров и продюсеров поможет воплотить вашей мечты
+                    </p>
+                </div>
+                <div class="achivements__item">
+                    <p class="achivements__item-heading">
+                        Опытные специалисты
+                    </p>
+                    <p class="achivements__item-text">
+                        Мы предлагаем индивидуальные решения для каждой задачи – от альбомов до саундтреков
+                    </p>
+                </div>
+            </section>
+        </div>
+        <section id="tarrif">
+            <div class="tarrif__heading_and_item">
+                <p class="tarrif__heading">
+                    Эконом
+                </p>
+                <div class="tarrif__item">
+                    <div class="tarrif-price_and_info">
+                        <div class="tarrif__item-price">
+                            <p>₽</p>
+                            <p class="tarrif-price">1500<span>/час</span></p>
+                        </div>
+                        <div class="tarrif-info">
+                            <p class="item-heading">Оборудование</p>
+                            <div class="tarrif-text">
+                                <p class="item-text">
+                                    Использование стандартных микрофонов и аудиоинтерфейсов
+                                </p>
+                                <p class="item-text">
+                                    Простое сведение <br>
+                                    без дополнительных эффектов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="tarrif__item-button button">
+                        Заказать аренду
+                    </button>
+                </div>
+            </div>
+            <div class="tarrif__heading_and_item">
+                <p class="tarrif__heading">
+                    Комфорт
+                </p>
+                <div class="tarrif__item">
+                    <div class="tarrif-price_and_info">
+                        <div class="tarrif__item-price">
+                            <p>₽</p>
+                            <p class="tarrif-price">3500<span>/час</span></p>
+                        </div>
+                        <div class="tarrif-info">
+                            <p class="item-heading">Оборудование</p>
+                            <div class="tarrif-text">
+                                <p class="item-text">
+                                    Качественные микрофоны<br>
+                                    и аудиоинтерфейсы <br>
+                                    для лучшего звучания
+                                </p>
+                                <p class="item-text">
+                                    Включает базовое сведение <br> 
+                                    и добавление эффектов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="tarrif__item-button button">
+                        Заказать аренду
+                    </button>
+                </div>
+            </div>
+            <div class="tarrif__heading_and_item">
+                <p class="tarrif__heading">
+                    Бизнес
+                </p>
+                <div class="tarrif__item">
+                    <div class="tarrif-price_and_info">
+                        <div class="tarrif__item-price">
+                            <p>₽</p>
+                            <p class="tarrif-price">5000<span>/час</span></p>
+                        </div>
+                        <div class="tarrif-info">
+                            <p class="item-heading">Оборудование</p>
+                            <div class="tarrif-text">
+                                <p class="item-text">
+                                    Высококлассные микрофоны <br>
+                                    и студийные мониторы <br>
+                                    для идеального звучания
+                                </p>
+                                <p class="item-text">
+                                    Полное сведение <br>
+                                    и мастеринг треков
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="tarrif__item-button button">
+                        Заказать аренду
+                    </button>
+                </div>
+            </div>
+            <div class="tarrif__heading_and_item">
+                <p class="tarrif__heading">
+                    Премиум
+                </p>
+                <div class="tarrif__item">
+                    <div class="tarrif-price_and_info">
+                        <div class="tarrif__item-price">
+                            <p>₽</p>
+                            <p class="tarrif-price">9000<span>/час</span></p>
+                        </div>
+                        <div class="tarrif-info">
+                            <p class="item-heading">Оборудование</p>
+                            <div class="tarrif-text">
+                                <p class="item-text">
+                                    Премиум-микрофоны, аудиоинтерфейсы <br> 
+                                    и программное обеспечение <br> 
+                                    для профессионалов
+                                </p>
+                                <p class="item-text">
+                                    Персонализированное сведение <br>
+                                    и мастеринг с учетом <br>
+                                    ваших пожеланий
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="tarrif__item-button button">
+                        Заказать аренду
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="contactForm">
+            <div class="form__banner">
+                <div class="form__banner-info">
+                    <p class="banner-heading">
+                        форма обращения
+                    </p>
+                    <p class="banner-text">
+                        Расскажите нам про свой следующий проект! <br> 
+                        А если есть вопросы на счёт аренды или оборудования? 
+                        Оставьте заявку, наш менеджер ответит на ваши вопросы и организует встречу. 
+                        Поможем разобраться и предложим решение
+                    </p>
+                </div>
+            </div>
+
+            <div class="form_and_button">
+                <form id="ContactUs" action="index.html" method="post" class="form">
+                    <div class="form__input-text">
+                            <p><input type="text" class="input-text" maxlength="256" name="Name" placeholder="Ваше имя" required></p>
+                            <p><input type="text" class="input-text" maxlength="256" name="Commentary" placeholder="Комментарий" required></p>
+                            <p><input type="text" class="input-text" maxlength="256" name="TgOrPhone" placeholder="Telegram или номер телефона" required></p>
+                    </div>
+                    <label for="">Тариф</label>
+                    <div class="form__input-radio">
+                        <div class="input-radio">
+                            <input id="radio-1" type="radio" name="radio" value="1">
+                            <label for="radio-1">Эконом</label>
+                        </div>
+                        <div class="input-radio">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">Комфорт</label>
+                        </div>
+                        <div class="input-radio">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">Бизнес</label>
+                        </div>
+                        <div class="input-radio">
+                            <input id="radio-4" type="radio" name="radio" value="4">
+                            <label for="radio-4">Премиум</label>
+                        </div>
+                    </div>
+                </form>
+                <button form="ContactUs" type="submit" class="form__button button">Отправить</button>
+            </div>
+
+        </section>
+
+        <section id="comments">
+        <div class="comm">
+            <div id="commentsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5500">
+
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                        <div class="comment__background">
+                            <div class="comment">
+                                <div class="user__info_and_date">
+                                    <div class="avatar_and_name">
+                                        <img src="./Public/Image/avatar1.jpg" 
+                                        alt="user_avatar" 
+                                        class="avatar" loading="lazy"/>
+                                        <p class="username">Елизавета Годова</p>
+                                    </div>
+                                    <p class="comment__date">12-10-2024</p>
+                                </div>
+                                <p class="comment_text">
+                                    Работа с командой студии была настоящим удовольствием.
+                                    Они не только профессионалы своего дела, но и очень дружелюбные люди. 
+                                    Спасибо за отличное качество звука и поддержку!
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                        <div class="comment__background">
+                            <div class="comment">
+                                <div class="user__info_and_date">
+                                    <div class="avatar_and_name">
+                                        <img src="./Public/Image/avatar2.jpg" 
+                                        alt="user_avatar" 
+                                        class="avatar" loading="lazy"/>
+                                        <p class="username">Иван Петров</p>
+                                    </div>
+                                    <p class="comment__date">15-10-2024</p>
+                                </div>
+                                <p class="comment_text">
+                                    Отличный сервис и потрясающий результат!
+                                    Спасибо за оперативную и качественную работу.
+                                    Спасибо за поддержку!<br>
+                                    Обязательно вернусь снова.
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                        <div class="comment__background">
+                            <div class="comment">
+                                <div class="user__info_and_date">
+                                    <div class="avatar_and_name">
+                                        <img src="./Public/Image/avatar3.jpg" 
+                                        alt="user_avatar" 
+                                        class="avatar" loading="lazy"/>
+                                        <p class="username">Анна Смирнова</p>
+                                    </div>
+                                    <p class="comment__date">18-10-2024</p>
+                                </div>
+                                <p class="comment_text">
+                                    Мне понравилось!
+                                    Очень приятно работать с такими профессионалами. <br>
+                                    Рекомендую всем, кто ищет качественную работу<br>
+                                    и позитивный подход.
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            
+                <button class="carousel-control-prev" type="button" data-bs-target="#commentsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#commentsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+            </div>
+            
+        </section>
+
+        <div class="aboutUs_and_footer">
+            <section id="aboutUs">
+                <div class="aboutUs__map_and_info">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/geo/bolshaya_novodmitrovskaya_ulitsa/8054876/?ll=37.585062%2C55.801123&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.585062%2C55.801123&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgc4MDU0ODc2ElTQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JHQvtC70YzRiNCw0Y8g0J3QvtCy0L7QtNC80LjRgtGA0L7QstGB0LrQsNGPINGD0LvQuNGG0LAiCg1OVxZCFWM0X0I%2C&z=16" width="1360" height="500" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <div class="aboutUs__info">
+                        <button id="aboutUs__number" class="button">8(000)000-00-00</button>
+                        <button id="aboutUs__mail" class="button">hi@MaxRec.studio</button>
+                        <button id="aboutUs__adress" class="button">Москва, Большая Новодмитровская, 39/9</button>
+                        <a target="_blank" href="https://t.me/RecStudMAX">
+                        <button id="aboutUs__telegram">
+                                <img src="./Public/Ico/Telegra_button.svg" 
+                                alt="telegram_button"
+                                loading="lazy"
+                                />
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer">
+                <div class="footer__inner">
+                    <a href="index.html">
+                        <img 
+                        src="./Public/Ico/Logo.svg" 
+                        alt="logo"
+                        width="198" height="19" loading="lazy"
+                        />
+                    </a>
+                    <div class="footer__links">
+                        <a target="_blank" href="#"><img src="./Public/Ico/Вк.svg" alt="" /></a>
+                        <a target="_blank" href="https://music.yandex.ru/users/yandexmusic/playlists/1383?utm_source=desktop&utm_medium=copy_link"><img src="../Public/Ico/ЯндексМузыка.svg" alt="" /></a>
+                        <a target="_blank" href="https://t.me/RecStudMAX"><img src="../Public/Ico/Телеграм.svg" alt="" /></a>
+                    </div>
+                    <p class="footer__mail">hi@MaxRec.studio</p>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <div class="floating_button">
+
+            <button id="openModal" class="floating__aboutUs">
+                связаться с нами
+            </button>
+    
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="form_and_button">
+                    <form id="ContactUsI" action="index.html" method="post" class="form">
+                        <div class="form__input-text">
+                            <p><input type="text" class="input-text" maxlength="256" name="Name" placeholder="Ваше имя" required></p>
+                            <p><input type="text" class="input-text" maxlength="256" name="Commentary" placeholder="Комментарий" required></p>
+                            <p><input type="text" class="input-text" maxlength="256" name="TgOrPhone" placeholder="Telegram или номер телефона" required></p>
+                        </div>
+                        <label for="">Тариф</label>
+                        <div class="form__input-radio">
+                            <div class="input-radio">
+                                <input id="radio-1m" type="radio" name="radio" value="1">
+                                <label for="radio-1m">Эконом</label>
+                            </div>
+                            <div class="input-radio">
+                                <input id="radio-2m" type="radio" name="radio" value="2">
+                                <label for="radio-2m">Комфорт</label>
+                            </div>
+                            <div class="input-radio">
+                                <input id="radio-3m" type="radio" name="radio" value="3">
+                                <label for="radio-3m">Бизнес</label>
+                            </div>
+                            <div class="input-radio">
+                                <input id="radio-4m" type="radio" name="radio" value="4">
+                                <label for="radio-4m">Премиум</label>
+                            </div>
+                        </div>
+                    </form>
+                    <button form="ContactUsI" type="submit" class="form__button button">Отправить</button>
+                </div>
+            </div>
+        </div>
+    
+        <a href="#">
+            <button class="floating_uparrow">
+                <img src="./Public/Ico/Uparrow.svg" alt="">
+            </button>
+        </a>
+    
+    </div>
+
+    <script src="./Js/script.js"></script>
+    <script src="./Js/jquery-3.7.1.min.js"></script>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
